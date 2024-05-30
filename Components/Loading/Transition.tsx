@@ -11,7 +11,7 @@ const Transition = ({ children }: any) => {
   useEffect(() => {
     if (isLoading) {
       animate([
-        ['#children', { y: [0, 30] }, { duration: 1, ease: cubicBezier(0.65, 0, 0.15, 1) }],
+        ['#children', { y: [0, 20] }, { duration: 1, ease: cubicBezier(0.65, 0, 0.15, 1) }],
         ['#blur-overlay', { top: ['-100%', '0%'] }, { duration: 1, ease: cubicBezier(0.65, 0, 0.15, 1), at: '<' }],
         [
           '#black-overlay',
@@ -21,7 +21,7 @@ const Transition = ({ children }: any) => {
       ]);
     } else {
       animate([
-        ['#children', { y: [-30, 0] }, { duration: 1, ease: cubicBezier(0.65, 0, 0.15, 1) }],
+        ['#children', { y: [-20, 0] }, { duration: 1, ease: cubicBezier(0.65, 0, 0.15, 1) }],
         ['#blur-overlay', { top: ['0%', '100%'] }, { duration: 1, ease: cubicBezier(0.65, 0, 0.15, 1), at: '<' }],
         [
           '#black-overlay',
