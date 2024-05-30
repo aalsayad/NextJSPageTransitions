@@ -3,7 +3,7 @@ import circles from '@/public/Images/circles.webp';
 
 function AboutPage() {
   return (
-    <div className='w-screen h-screen flex items-center justify-center'>
+    <div className='w-screen h-screen flex items-center justify-center overflow-hidden'>
       <Image src={circles} alt='Image' className='w-full h-[110%] object-cover' />
     </div>
   );
