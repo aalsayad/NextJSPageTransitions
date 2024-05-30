@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import blue from '@/public/Images/blue.jpg';
+import blue from '@/public/Images/blue.webp';
 
 export default function Home() {
   return (

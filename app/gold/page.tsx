@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import gold from '@/public/Images/gold.jpg';
+import gold from '@/public/Images/gold.webp';
 
 function ContactPage() {
   return (

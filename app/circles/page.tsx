@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import circles from '@/public/Images/circles.jpg';
+import circles from '@/public/Images/circles.webp';
 
 function AboutPage() {
   return (
