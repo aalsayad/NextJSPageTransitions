@@ -20,8 +20,10 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         {/* <Transition> */}
-        <Navbar />
-        {children}
+        <main className='max-w-screen max-h-screen overflow-hidden'>
+          <Navbar />
+          {children}
+        </main>
         {/* </Transition> */}
       </body>
     </html>
