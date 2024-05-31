@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Transition>
-          <Navbar />
-          {children}
-        </Transition>
+        {/* <Transition> */}
+        <Navbar />
+        {children}
+        {/* </Transition> */}
       </body>
     </html>
   );
