@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        {/* <Transition> */}
-        <main className='max-w-screen max-h-screen overflow-hidden'>
-          <Navbar />
-          {children}
-        </main>
-        {/* </Transition> */}
+        <Transition>
+          <main className='max-w-screen max-h-screen overflow-hidden'>
+            <Navbar />
+            {children}
+          </main>
+        </Transition>
       </body>
     </html>
   );
