@@ -31,8 +31,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='w-screen fixed'>
-      <div className='my-8 md:my-10 mx-auto w-fit p-2 rounded-full bg-black/80 backdrop-blur-md flex items-center justify-center text-white text-sm md:text-base md:gap-2 gap-1 font-light'>
+    <nav className='absolute z-[1] top-0 left-0 w-screen flex items-center justify-center'>
+      <nav className='my-8 md:my-10 min-w-fit p-2 rounded-full bg-black/80 backdrop-blur-md flex items-center justify-center text-white text-sm md:text-base md:gap-2 gap-1 font-light'>
         <Link href='/' onClick={(e) => onLinkClick(e)} className={`${LinkStyle} ${isActive === '/' && 'bg-white/5'}`}>
           <span className={spanStyle}>001/</span>Bluer
         </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
         >
           <span className={spanStyle}>003/</span>Golden
         </Link>
-      </div>
+      </nav>
     </nav>
   );
 };
